@@ -17,3 +17,9 @@ const matrix2 : number[][][] = [
 ]
 
 console.log(matrix2);
+
+console.log(matrix2[0]);
+
+console.log(matrix2[0]?.[0]);
+
+console.log(matrix2[0]?.[0]?.length);
