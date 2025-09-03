@@ -6,10 +6,10 @@ type Marks = {
 }
 
 type student = {
-    name : string;
-    enroll : number;
-    age : number;
-    class : string; 
+    readonly name : string;
+    readonly enroll : number;
+    readonly age : number;
+    readonly class : string; 
 }
 
 const totalMarks = (marks: Marks): number => {
@@ -17,6 +17,7 @@ const totalMarks = (marks: Marks): number => {
 };
 
 function StudentDataDisplay(studentData : student,data : Marks){
+    
     console.log(`
         ======================
         |   Student Schema   |
@@ -50,3 +51,4 @@ StudentDataDisplay(
     {name:"Tanisha",enroll: 1111604424,age : 23,class:"12th"},
     {maths:92,english:88,hindi:39}
 );
+
